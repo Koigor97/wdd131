@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    /* text-align: center; */
+    position: static;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 0rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  #hamburger {
+    display: none; /* Hide hamburger in larger views */
+  }
+
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
