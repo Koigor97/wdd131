@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #005a8e;
+  --secondary-color: #d1e0f2;
+  --font-color: #333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+}
+
+/* Hero Section */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Data and Weather Sections */
+.data,
+.weather {
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* Styling for labels in Data and Weather section */
+.data p strong,
+.weather p strong {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.5rem;
+
+    position: relative;
+  }
+
+  /* Make the hero image full width */
+  .hero {
+    grid-column: 1 / 4;
+  }
+
+  /* Only apply this layout for larger screens */
+  .data,
+  .weather {
+    position: absolute;
+    top: 20%;
+    padding: 1rem 2rem;
+    background-color: rgba(209, 224, 242, 0.9); /* Transparent background */
+    box-shadow: var(--box-shadow); /* Add shadow to boxes */
+    z-index: 2; /* Ensure the boxes are above the image */
+  }
+
+  .data {
+    left: 1%; /* Position the data box */
+    top: 15%;
+    translate: transform(-50%, -50%);
+  }
+
+  .weather {
+    right: 2%; /* Position the weather box */
+    top: 50%;
+    translate: transform(-50%, -50%);
+  }
+}
