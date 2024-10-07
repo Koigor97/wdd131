@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: wrap;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  background-color: #005a8e;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004a77;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.temple-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Cards</title>
+    <meta
+      name="description"
+      content="A collection of temples with filters for size, age, and more."
+    />
+    <meta name="author" content="Samuel Fogbawa Turay" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Cards</h1>
+      <nav>
+        <button id="home">Home</button>
+        <button id="old">Old Temples</button>
+        <button id="new">New Temples</button>
+        <button id="large">Large Temples</button>
+        <button id="small">Small Temples</button>
+      </nav>
+    </header>
+    <main id="temple-cards-container"></main>
+    <footer>
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Your Name
+      </p>
+      <p>
+        Last Modified:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
