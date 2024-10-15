@@ -160,3 +160,18 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding-inline: 2rem;
+  margin-inline-start: 4rem;
+
+  & ::marker {
+    content: "⚡️";
+  }
+
+  & li {
+    margin-block-end: 1rem;
+  }
+}
