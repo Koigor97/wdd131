@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <main>
+      <form id="reviewForm" method="get" action="review.html">
+        <!-- Product Name -->
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Choose a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <label>
+            <input type="radio" name="rating" value="1" required />
+            ★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="2" required />
+            ★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="3" required />
+            ★★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="4" required />
+            ★★★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="5" required />
+            ★★★★★
+          </label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="install-date">Date of Installation</label>
+        <input type="date" id="install-date" name="installDate" required />
+
+        <!-- Features Found Useful -->
+        <fieldset>
+          <legend>
+            Which features did you find useful in the product? (Check all that
+            apply)
+          </legend>
+          <label>
+            <input type="checkbox" name="features" value="durability" />
+            Durability
+          </label>
+          <label>
+            <input type="checkbox" name="features" value="ease-of-use" />
+            Ease of Use
+          </label>
+          <label>
+            <input type="checkbox" name="features" value="performance" />
+            Performance
+          </label>
+          <label>
+            <input type="checkbox" name="features" value="design" />
+            Design
+          </label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review (Optional)</label>
+        <textarea id="review" name="review" rows="5"></textarea>
+
+        <!-- User Name -->
+        <label for="name">Your Name (Optional)</label>
+        <input type="text" id="name" name="userName" />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        Samuel Turay. Sierra Leone.
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

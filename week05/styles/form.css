@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4b0048;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  width: fit-content;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+textarea,
+input[type="text"],
+input[type="date"],
+select {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4b0048;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #6a006c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
